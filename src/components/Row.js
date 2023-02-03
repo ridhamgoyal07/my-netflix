@@ -27,6 +27,9 @@ const Row = ({ title, fetch, isLargeRow = false }) => {
                   isLargeRow ? movie.poster_path : movie.backdrop_path
                 }`}
                 alt={movie.name}
+                onClick={(e) => {
+                  console.log(e.target);
+                }}
               />
             )
           );
