@@ -17,14 +17,11 @@ function ProfileScreen() {
       <div className="profileScreen__body">
         <h1>Edit Profile</h1>
         <div className="profileScreen__info">
-          <img
-            src="/avatar.png"
-            alt="avatar"
-            style={{ width: "400px", objectFit: "contain" }}
-          />
+          <img src="/avatar.png" alt="avatar" />
           <div className="profileScreen__details">
             <h2>{user.email}</h2>
             <div className="profileScreen__plans">
+              <h3>Plans</h3>
               <button className="profileScreen__signOut" onClick={signMeOut}>
                 Sign Out
               </button>
