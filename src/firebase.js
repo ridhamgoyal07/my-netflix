@@ -5,6 +5,8 @@ import {
   // GoogleAuthProvider,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
 } from "firebase/auth";
 import { getFirestore } from "firebase/firestore/lite";
 
@@ -23,4 +25,10 @@ const auth = getAuth();
 // const storage = getStorage(app);
 
 export default db;
-export { auth, createUserWithEmailAndPassword, signInWithEmailAndPassword };
+export {
+  auth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
+};
